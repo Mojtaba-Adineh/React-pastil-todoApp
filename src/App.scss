@@ -1,0 +1,29 @@
+@import "./global.scss";
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f8ff;
+
+  .myContainer {
+    margin: 50px 0;
+    width: 60vw;
+    padding: 10px;
+    background-color: #ecedf6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    @include mobile{
+      width: 80vw;
+    }
+    
+    h1 {
+      color: #355070;
+    }
+  }
+}

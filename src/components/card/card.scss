@@ -1,0 +1,14 @@
+.myCard {
+  width: 95%;
+  transition: all 2s ease;
+  
+  .taskContainer {
+    margin-top: 10px;
+    background: linear-gradient(100.5deg, rgb(148, 146, 236) 17.7%, rgb(245, 194, 194) 76.1%);;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../global.scss";
+
+.taskCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+
+      .title,
+      .date {
+        padding: 0;
+        margin: 0 10px;
+      }
+
+      .title {
+        font-weight: 600;
+
+        @include mobile{
+          font-size: 12px;
+        }
+
+        &.complete {
+          -webkit-text-decoration-line: line-through; /* Safari */
+          text-decoration-line: line-through;
+          color: gray;
+        }
+      }
+
+      .date {
+        font-size: 13px;
+        font-weight: 300;
+
+        @include mobile{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .right {
+    @include mobile{
+      display: flex;
+      
+    }
+
+    .delete,
+    .edit {
+      background-color: lightgray;
+      color: rgb(88, 88, 88);
+      border-radius: 5px;
+      padding: 2px;
+      font-size: 30px;
+      margin-left: 10px;
+      cursor: pointer;
+
+      @include mobile{
+        font-size: 20px;
+      }
+    }
+  }
+}

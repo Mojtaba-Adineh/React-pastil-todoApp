@@ -1,0 +1,44 @@
+@import "../../../global.scss";
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    button {
+      background-color: #646ff0;
+      color: white;
+      font-size: 18px;
+      border-radius: 8px;
+      padding: 8px 20px;
+      font-weight: 550;
+      border: none;
+
+      @include mobile{
+        font-size: 10px;
+        padding: 4px 10px;
+      }
+    }
+
+    select {
+      width: 150px;
+      border: none;
+      background-color: #646ff0;
+      color: white;
+
+      @include mobile{
+        width: 90px;
+        font-size: 10px;
+      }
+
+      option{
+        background: #646ff0;
+        color: white;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }

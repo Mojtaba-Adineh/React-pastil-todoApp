@@ -1,0 +1,24 @@
+@import "../../../global.scss";
+
+.form-check {
+  input {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    background-color: lightblue;
+
+    @include mobile{
+        width: 25px;
+        height: 25px;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:checked {
+      background-color: rgb(148, 146, 236);
+    }
+  }
+}
